@@ -1,10 +1,10 @@
-import { useState } from 'react'
 import { Todos } from './components/Todos'
 import { Header } from './components/Header'
 import { ListOfTodos, TodoId, TodoTitle, TodoStatus, type Todo as TodoType } from './types'
+import { useLocalStorage } from './hooks/useLocalStorage'
 
 const App: React.FC = () => {
-  const [todos, setTodos] = useState<ListOfTodos>([])
+  const [todos, setTodos] = useLocalStorage<ListOfTodos>('todos', [])
 
   const handleAddTodo = ({ title }: TodoTitle) => {
     const newTodo: TodoType = {
@@ -38,7 +38,7 @@ const App: React.FC = () => {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white py-8 px-4">
+    <main className="min-h-screen bg-[#11182D] text-white py-8 px-4">
       <section className="container mx-auto max-w-3xl">
         <Header onAddTodo={handleAddTodo} />
         <Todos
@@ -53,3 +53,4 @@ const App: React.FC = () => {
 }
 
 export default App
+

@@ -31,7 +31,7 @@ export const TaskEditor: React.FC<Props> = ({ initialTask, onSave, onCancel }) =
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}
-        className="bg-gray-800 text-white rounded-lg w-full max-w-md p-6 space-y-6 relative"
+        className="bg-[#17213f] border-[#1C2D64] border-2 text-white rounded-lg w-full max-w-md p-6 space-y-6 relative"
       >
         <div className="text-center">
           <h2 className="text-2xl font-semibold">Editar Tarea</h2>
@@ -47,7 +47,7 @@ export const TaskEditor: React.FC<Props> = ({ initialTask, onSave, onCancel }) =
               type="text"
               value={task.title}
               onChange={(e) => setTask({ ...task, title: e.target.value })}
-              className="w-full px-3 py-2 bg-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 bg-[#11182D] rounded-md focus:outline-none focus:ring-2 focus:ring-[#1C2D64]"
             />
           </div>
 
@@ -64,7 +64,7 @@ export const TaskEditor: React.FC<Props> = ({ initialTask, onSave, onCancel }) =
                     onChange={() =>
                       setTask({ ...task, status: status as TodoStatus })
                     }
-                    className="form-radio h-4 w-4 text-blue-600"
+                    className="form-radio h-4 w-4 text-white"
                   />
                   <span>{status}</span>
                 </label>
@@ -76,7 +76,7 @@ export const TaskEditor: React.FC<Props> = ({ initialTask, onSave, onCancel }) =
         <div className="flex justify-end space-x-4">
           <motion.button
             onClick={onCancel}
-            className="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors"
+            className="px-4 py-2 bg-[#11182D] text-white rounded-lg hover:bg-[#1C2D64] transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -84,7 +84,7 @@ export const TaskEditor: React.FC<Props> = ({ initialTask, onSave, onCancel }) =
           </motion.button>
           <motion.button
             onClick={handleSave}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            className="px-4 py-2 bg-[#1C2D64] text-white rounded-lg hover:bg-[#1C2D64]/50 transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

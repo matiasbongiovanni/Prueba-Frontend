@@ -21,7 +21,7 @@ export const Todo: React.FC<Props> = ({ id, title, completed, onRemoveTodo, onTo
 
     return (
         <motion.div 
-            className="flex items-center justify-between p-4 bg-gray-800 rounded-lg transition-all duration-300 ease-in-out hover:bg-gray-700"
+            className="flex items-center justify-between p-4 bg-[#1C2D64]/20 rounded-lg transition-all duration-300 ease-in-out hover:bg-[#1C2D64]/50"
             whileHover={{ scale: 1.02 }}
         >
             <div className="flex items-center flex-grow mr-4">
@@ -33,7 +33,7 @@ export const Todo: React.FC<Props> = ({ id, title, completed, onRemoveTodo, onTo
                     }}
                     className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out"
                 />
-                <label className={`ml-2 ${completed ? 'line-through text-gray-500' : 'text-white'}`}>{title}</label>
+                <label className={`ml-2 ${completed ? 'line-through text-gray-400' : 'text-white'}`}>{title}</label>
             </div>
             <div className="flex items-center">
                 <motion.button
