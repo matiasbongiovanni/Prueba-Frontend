@@ -6,7 +6,7 @@ Este proyecto es una aplicación de TO DO LIST desarrollada con Vite, React, Typ
 
 **Vite:** Para un entorno de desarrollo rápido y eficiente.
 
-**React:** Biblioteca para construir interfaces de usuario.
+**React:** Para construir interfaces de usuario.
 
 **TypeScript:** Para un código más robusto y tipado estático.
 
