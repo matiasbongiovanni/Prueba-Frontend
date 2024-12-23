@@ -24,7 +24,7 @@ npm o yarn como gestor de paquetes
 
 Clonar el repositorio:
 
-git clone [(Link repositorio)](https://github.com/matiasbongiovanni/Prueba-Frontend/)
+git clone (https://github.com/matiasbongiovanni/Prueba-Frontend/)
 
 cd Prueba-Frontend
 
