@@ -24,15 +24,15 @@ npm o yarn como gestor de paquetes
 
 Clonar el repositorio:
 
-git clone (Link repositorio)
+git clone [(Link repositorio)](https://github.com/matiasbongiovanni/Prueba-Frontend/)
 
-cd (nombre-del-repositorio)
+cd Prueba-Frontend
 
-Install Todo-App with npm
+Install Prueba-Frontend with npm
 
 ```bash
-  npm install Todo-App
-  cd Todo-App
+  npm install Prueba-Frontend
+  cd Prueba-Frontend
 ```
 
 Abrir el navegador en la dirección indicada por Vite, generalmente http://localhost:5173.
