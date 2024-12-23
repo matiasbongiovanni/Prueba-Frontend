@@ -24,7 +24,7 @@ npm o yarn como gestor de paquetes
 
 Clonar el repositorio:
 
-git clone (https://github.com/matiasbongiovanni/Prueba-Frontend/)
+git clone https://github.com/matiasbongiovanni/Prueba-Frontend/
 
 cd Prueba-Frontend
 
@@ -59,7 +59,7 @@ Abrir el navegador en la dirección indicada por Vite, generalmente http://local
 
 ## Demo
 
-https://prueba-front-pearl.vercel.app/
+https://prueba-frontend-beta.vercel.app/
 
 
 ## 🔗 Links
